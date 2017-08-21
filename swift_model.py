@@ -61,7 +61,7 @@ print('\n' + '*' * 100 + '\n')
 def formatMapper(x):
     pattern1 = re.compile('(\w+_?\w+).*?', re.S)
     str1 = re.findall(pattern1, x)
-    str = str1[0] + ' <- map["' + str1[0] + '"]'
+    str = 'self.' + str1[0] + ' <- map["' + str1[0] + '"]'
     return str
 
 newArr2 = map(formatMapper, arr)
