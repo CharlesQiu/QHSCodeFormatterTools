@@ -11,14 +11,14 @@
 
 import re
 
-data = open('swift_model_data.txt', 'r', encoding='utf-8')
+data = open('swift_model_data.txt', 'r')
 arr = []
 
 for line in data:
     arr.append(line)
 
 print('\n' + '*' * 100 + '\n')
-print(open('swift_model_data.txt', 'r', encoding='utf-8').read())
+print(open('swift_model_data.txt', 'r').read())
 print('\n' + '*' * 100 + '\n')
 
 # ---- swift 属性 -----
